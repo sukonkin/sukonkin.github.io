@@ -1,0 +1,25 @@
+@media screen and (min-width: 1920px) {
+	.bg-cow {
+		background-size: contain;
+	}
+}
+
+@media screen and (max-width: 1115px) {
+	.partners {
+		width: 600px;
+	}
+	
+	.navigation li {
+		margin-left: 50px;
+	}
+}
+
+@media screen and (max-width: 1030px) {
+	body {
+		min-width: 1020px;
+	}
+	
+	.partners {
+		width: 550px;
+	}
+}
