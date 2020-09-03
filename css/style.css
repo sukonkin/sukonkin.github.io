@@ -2,7 +2,8 @@
 *::before,
 *::after {
 	margin: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,19 +35,6 @@ header {
 	color: #000000;
 }
 
-.logo +nav {
-	display: inline-block;
-}
-
-.logo +nav a {
-	text-decoration: dashed 1px #646464;
-	font-size: 14px;
-	color: #646464;
-}
-
-.logo +nav a:hover {
-	text-decoration: none;
-}
 
 
 
@@ -80,7 +68,55 @@ a[title="Write me"] {
 
 
 
+/* Portfolio */
 
+.portfolio {
+	padding-top: 120px;
+}
+
+h2 {
+	padding-bottom: 40px;
+	font-size: 30px;
+	color: #000000;
+}
+
+.cart {
+	width: 301px;
+}
+
+.cart > img {
+	padding-bottom: 15px;
+}
+
+.cart > img +p {
+	padding-bottom: 15px;
+}
+
+.dataTime {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	   -ms-flex-align: center;
+	      align-items: center;
+	-webkit-box-pack: justify;
+	   -ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.dataTime > a {
+	font-size: 14px;
+	color: #3e3d3d;
+}
+
+.dataTime > a:hover {
+	text-decoration: none;
+}
+
+.dataTime > p {
+	font-size: 12px;
+	color: #8C8C8C;
+}
 
 
 

@@ -1,0 +1,339 @@
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #69727a;
+}
+
+.centerContent {
+	max-width: 1125px;
+	margin: 0 auto;
+}
+
+
+
+/* Header */
+
+header {
+	padding: 28px 0 8px 0;
+	width: 100%;
+	background-color: #343a40;
+}
+
+.hiddenHeader {
+	display: none;
+}
+
+.descriptionContainer {
+	margin-right: 124px;
+	display: inline-block;
+	width: 630px;
+}
+
+.descriptionAbout {
+	line-height: 1.5;
+}
+
+.titleNavigation {
+	padding-bottom: 11px;
+	font-size: 24px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.titleNavigation +ul > li > a {
+	text-decoration: none;
+	line-height: 1.5;
+	color: #ffffff;
+}
+
+.titleNavigation +ul > li > a:hover {
+	text-decoration: underline;
+}
+
+nav {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 30px;
+}
+
+
+
+/* Slide One */
+
+.slideOne {
+	height: 55px;
+	background-color: #343a40;
+}
+
+.slideOneHeader {
+	padding-top: 6px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-line-pack: center;
+	    align-content: center;
+}
+
+.logoContainer {
+	padding-top: 12px;
+}
+
+.logoContainer > a > img {
+	padding-right: 7px;
+}
+
+.logoText {
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: 700;
+	float: right;
+}
+
+.slideOneButton {
+	/* margin-right: 15px; */
+	height: 42px;
+	width: 58px;
+	border: solid 1px #83878b;
+	border-radius: 4px;
+}
+
+.slideOneButton:hover {
+	cursor: pointer;
+}
+
+
+
+/* Slide Two */
+
+.slideTwo {
+	padding: 105px 0 105px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.slideTwo > div > h1 {
+	padding-bottom: 10px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 300;
+}
+
+.slideTwo > div > p {
+	padding: 0 27%;
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.6;
+}
+
+.buttonContainer {
+	margin-top: 20px;
+	display: inline-block;
+	text-align: center;
+}
+
+.buttonContainer > button {
+	padding: 0 10px;
+	border: none;
+	height: 37px;
+	color: #ffffff;
+	border-radius: 4px;
+	background-color: #6c757d;
+}
+
+button.slideTwoButtonOne {
+	padding: 0 12px;
+	background-color: #007bff;
+}
+
+button.slideTwoButtonOne:hover {
+	background-color: #0069d9;
+}
+
+button.slideTwoButtonOne:active {
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
+	border: 3px solid #7fbdff;
+	margin: -3px;
+}
+
+button.slideTwoButtonTwo:hover {
+	background-color: #5a6268;
+}
+
+button.slideTwoButtonTwo:active {
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
+	border: 3px solid #b5babe;
+	margin: -3px;
+}
+
+
+
+
+/* Slide Three */
+
+.slideThree {
+	padding: 50px 0 0 0;
+	background-color: #f8f9fa;
+}
+
+.slideThreeFlex {
+	padding-bottom: 72px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.portfolioCard {
+	margin-bottom: 25px;
+	border: 1px solid #dfdfdf;
+	border-radius: 5px;
+	width: 349px;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0 5px 6px -2px #dfdfdf;
+	        box-shadow: 0 5px 6px -2px #dfdfdf;
+} 
+
+.portfolioCard > p {
+	padding: 20px 18px 15px 18px;
+	line-height: 1.5;
+	color: #212529;
+}
+
+.portfolioCard > img {
+	border-radius: 5px 5px 0 0;
+}
+
+.portfolioButton {
+	display: inline-block;
+	margin: 0 0 20px 18px;
+}
+
+.portfolioButton > button {
+	padding: 0 8px;
+	margin-right: -5px;
+	height: 30px;
+	border: 1px solid #6c757d;
+	background-color: transparent;
+	font-size: 14px;
+	color: #6c757d;
+}
+
+.portfolioButton > button:hover {
+	background-color: #55595c;
+	color: #ffffff;
+}
+
+.portfolioButton-1 {
+	border-radius: 3px 0 0 3px;
+}
+
+.portfolioButton-2 {
+	border-radius: 0 3px 3px 0;
+}
+
+.time {
+	margin-top: -14px;
+	display: inline-block;
+	float: right;
+	font-size: 13px;
+	color: #6c757d;
+}
+
+
+
+
+/* Slide Four */
+
+.slideFour {
+	padding: 55px 0;
+	color: #6c757d;
+}
+
+.slideFour > p > a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+.slideFour > p > a:hover {
+	text-decoration: underline;
+	color: #0069d9;
+}
+
+.slideFour > div {
+	padding-bottom: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.slideFour > div > a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+.slideFour > div > a:hover {
+	text-decoration: underline;
+	color: #0069d9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

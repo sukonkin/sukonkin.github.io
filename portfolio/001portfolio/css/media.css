@@ -1,0 +1,173 @@
+@media screen and (max-width: 1165px) {
+	div.descriptionContainer {
+		width: 500px;
+	}
+	
+	.centerContent {
+		margin: 0 auto;
+		width: 1000px;
+	}
+	
+	.portfolioCard {
+		-ms-flex-preferred-size: 321px;
+		    flex-basis: 321px;
+	}
+	
+	.portfolioCard > img {
+		width: 320px;
+	}
+	
+}
+
+@media screen and (max-width: 1035px) {
+	
+	.centerContent {
+		margin: 0 auto;
+		width: 900px;
+	}
+	
+	.portfolioCard {
+		-ms-flex-preferred-size: 291px;
+		    flex-basis: 291px;
+	}
+	
+	.portfolioCard > img {
+		width: 290px;
+	}
+	
+}
+
+@media screen and (max-width: 935px) {
+	.centerContent {
+		margin: 0 auto;
+		width: 800px;
+	}
+	
+	.portfolioCard {
+		-ms-flex-preferred-size: 251px;
+		    flex-basis: 251px;
+	}
+	
+	.portfolioCard > img {
+		width: 250px;
+	}
+	
+}
+
+@media screen and (max-width: 825px) {
+	div.descriptionContainer {
+		width: 400px;
+	}
+	
+	.centerContent {
+		margin: 0 auto;
+		width: 700px;
+	}
+	
+	.slideOneHeader {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	
+	.portfolioCard {
+		-ms-flex-preferred-size: 691px;
+		    flex-basis: 691px;
+	}
+	
+	.portfolioCard > img {
+		width: 690px;
+	}
+	
+}
+
+@media screen and (max-width: 720px) {
+	div.descriptionContainer {
+		margin-right: 60px;
+		width: 300px;
+	}
+	
+	.centerContent {
+		margin: 0 auto;
+		width: 500px;
+	}
+	
+	.portfolioCard {
+		-ms-flex-preferred-size: 491px;
+		    flex-basis: 491px;
+	}
+	
+	.portfolioCard > img {
+		width: 490px;
+	}
+	
+	.slideFour > div {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	
+	.slideFour > div > a {
+		padding-top: 10px;
+	}
+	
+}
+
+@media screen and (max-width: 555px) {
+	div.descriptionContainer {
+		margin-right: 80px;
+		width: 300px;
+	}
+	
+	nav {
+		padding-top: 30px;
+	}
+}
+
+@media screen and (max-width: 519px) {
+	div.descriptionContainer {
+		margin-right: 80px;
+		width: 300px;
+	}
+	
+	.centerContent {
+		margin: 0 auto;
+		width: 300px;
+	}
+	
+	.portfolioCard {
+		-ms-flex-preferred-size: 291px;
+		    flex-basis: 291px;
+	}
+	
+	.portfolioCard > img {
+		width: 290px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
