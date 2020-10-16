@@ -35,6 +35,37 @@ header {
 	color: #000000;
 }
 
+.focus-in-contract {
+	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
 
 
 
@@ -92,7 +123,7 @@ h2 {
 	padding-bottom: 15px;
 }
 
-.dataTime {
+.data-Time {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -104,16 +135,16 @@ h2 {
 	justify-content: space-between;
 }
 
-.dataTime > a {
+.data-Time > a {
 	font-size: 14px;
 	color: #3e3d3d;
 }
 
-.dataTime > a:hover {
+.data-Time > a:hover {
 	text-decoration: none;
 }
 
-.dataTime > p {
+.data-Time > p {
 	font-size: 12px;
 	color: #8C8C8C;
 }

@@ -1,4 +1,6 @@
-var welcome = [
+'use strict';
+
+const welcome = [
 "Привет!",
 "Вітання!",
 "Salam!",
@@ -22,5 +24,5 @@ var welcome = [
 "Hallå!"
 ];
 
-var el = document.getElementById("greeting");
-el.textContent = welcome[Math.floor(Math.random() * welcome.length)];
+const hello = document.querySelector("#greeting");
+hello.textContent = welcome[Math.floor(Math.random() * welcome.length)];

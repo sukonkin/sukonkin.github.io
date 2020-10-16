@@ -22,13 +22,10 @@ body {
 /* Header */
 
 header {
+	margin-top: -173px;
 	padding: 28px 0 8px 0;
 	width: 100%;
 	background-color: #343a40;
-}
-
-.hiddenHeader {
-	display: none;
 }
 
 .descriptionContainer {
@@ -106,7 +103,6 @@ nav {
 }
 
 .slideOneButton {
-	/* margin-right: 15px; */
 	height: 42px;
 	width: 58px;
 	border: solid 1px #83878b;
@@ -315,9 +311,37 @@ button.slideTwoButtonTwo:active {
 
 
 
+/* Animation */
 
+.show {
+	animation-name: show-header;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
 
+@keyframes show-header {
+	0% {
+		margin-top: -173px;
+	}
+	100% {
+		margin-top: 0;
+	}
+}
 
+.hide {
+	animation-name: hide-header;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hide-header {	
+	0% {
+		margin-top: 0;
+	}
+	100% {
+		margin-top: -173px;
+	}
+}
 
 
 
