@@ -4,9 +4,21 @@
 	}
 	
 	.hide {
-		animation-name: show-header;
-		animation-duration: 1s;
-		animation-fill-mode: forwards;
+		-webkit-animation-name: hide-header;
+		        animation-name: hide-header;
+		-webkit-animation-duration: 1s;
+		        animation-duration: 1s;
+		-webkit-animation-fill-mode: forwards;
+		        animation-fill-mode: forwards;
+	}
+
+	@-webkit-keyframes hide-header {
+		0% {
+			margin-top: 0;
+		}
+		100% {
+			margin-top: -191px;
+		}
 	}
 
 	@keyframes hide-header {
@@ -19,9 +31,21 @@
 	}
 
 	.show {
-		animation-name: hide-header;
-		animation-duration: 1s;
-		animation-fill-mode: forwards;
+		-webkit-animation-name: show-header;
+		        animation-name: show-header;
+		-webkit-animation-duration: 1s;
+		        animation-duration: 1s;
+		-webkit-animation-fill-mode: forwards;
+		        animation-fill-mode: forwards;
+	}
+
+	@-webkit-keyframes show-header {	
+		0% {
+			margin-top: -191px;
+		}
+		100% {
+			margin-top: 0;
+		}
 	}
 
 	@keyframes show-header {	
@@ -42,9 +66,21 @@
 	}
 	
 	.hide {
-		animation-name: show-header;
-		animation-duration: 1s;
-		animation-fill-mode: forwards;
+		-webkit-animation-name: hide-header;
+		        animation-name: hide-header;
+		-webkit-animation-duration: 1s;
+		        animation-duration: 1s;
+		-webkit-animation-fill-mode: forwards;
+		        animation-fill-mode: forwards;
+	}
+
+	@-webkit-keyframes hide-header {
+		0% {
+			margin-top: 0;
+		}
+		100% {
+			margin-top: -215px;
+		}
 	}
 
 	@keyframes hide-header {
@@ -57,9 +93,21 @@
 	}
 
 	.show {
-		animation-name: hide-header;
-		animation-duration: 1s;
-		animation-fill-mode: forwards;
+		-webkit-animation-name: show-header;
+		        animation-name: show-header;
+		-webkit-animation-duration: 1s;
+		        animation-duration: 1s;
+		-webkit-animation-fill-mode: forwards;
+		        animation-fill-mode: forwards;
+	}
+
+	@-webkit-keyframes show-header {	
+		0% {
+			margin-top: -215px;
+		}
+		100% {
+			margin-top: 0;
+		}
 	}
 
 	@keyframes show-header {	
@@ -79,9 +127,21 @@
 	}
 	
 	.hide {
-		animation-name: show-header;
-		animation-duration: 1s;
-		animation-fill-mode: forwards;
+		-webkit-animation-name: hide-header;
+		        animation-name: hide-header;
+		-webkit-animation-duration: 1s;
+		        animation-duration: 1s;
+		-webkit-animation-fill-mode: forwards;
+		        animation-fill-mode: forwards;
+	}
+
+	@-webkit-keyframes hide-header {
+		0% {
+			margin-top: 0;
+		}
+		100% {
+			margin-top: -382px;
+		}
 	}
 
 	@keyframes hide-header {
@@ -94,9 +154,21 @@
 	}
 
 	.show {
-		animation-name: hide-header;
-		animation-duration: 1s;
-		animation-fill-mode: forwards;
+		-webkit-animation-name: show-header;
+		        animation-name: show-header;
+		-webkit-animation-duration: 1s;
+		        animation-duration: 1s;
+		-webkit-animation-fill-mode: forwards;
+		        animation-fill-mode: forwards;
+	}
+
+	@-webkit-keyframes show-header {	
+		0% {
+			margin-top: -382px;
+		}
+		100% {
+			margin-top: 0;
+		}
 	}
 
 	@keyframes show-header {	

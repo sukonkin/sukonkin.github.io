@@ -4,12 +4,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	function hideHeader() {
 		navigation.classList.add('hide');
-		navigation.classList.remove('show');	
+		navigation.classList.remove('show');
 	}
 
 	function showHeader() {
 		navigation.classList.add('show');
-		navigation.classList.remove('hide');	
+		navigation.classList.remove('hide');
 	}
 
 	button.addEventListener('click', () => {
