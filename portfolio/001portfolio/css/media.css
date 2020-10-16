@@ -66,13 +66,13 @@
 	
 	.slideOneHeader {
 		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
+		   -ms-flex-pack: center;
+		 justify-content: center;
 	}
 	
 	.portfolioCard {
 		-ms-flex-preferred-size: 691px;
-		    flex-basis: 691px;
+		             flex-basis: 691px;
 	}
 	
 	.portfolioCard > img {
@@ -94,7 +94,7 @@
 	
 	.portfolioCard {
 		-ms-flex-preferred-size: 491px;
-		    flex-basis: 491px;
+		             flex-basis: 491px;
 	}
 	
 	.portfolioCard > img {

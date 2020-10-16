@@ -1,0 +1,127 @@
+@media screen and (max-width: 825px) {
+	header {
+		margin-top: -191px;
+	}
+	
+	.hide {
+		animation-name: show-header;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes hide-header {
+		0% {
+			margin-top: 0;
+		}
+		100% {
+			margin-top: -191px;
+		}
+	}
+
+	.show {
+		animation-name: hide-header;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes show-header {	
+		0% {
+			margin-top: -191px;
+		}
+		100% {
+			margin-top: 0;
+		}
+	}
+
+	
+}
+
+@media screen and (max-width: 720px) {
+	header {
+		margin-top: -215px;
+	}
+	
+	.hide {
+		animation-name: show-header;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes hide-header {
+		0% {
+			margin-top: 0;
+		}
+		100% {
+			margin-top: -215px;
+		}
+	}
+
+	.show {
+		animation-name: hide-header;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes show-header {	
+		0% {
+			margin-top: -215px;
+		}
+		100% {
+			margin-top: 0;
+		}
+	}
+
+}
+
+@media screen and (max-width: 555px) {
+	header {
+		margin-top: -382px;
+	}
+	
+	.hide {
+		animation-name: show-header;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes hide-header {
+		0% {
+			margin-top: 0;
+		}
+		100% {
+			margin-top: -382px;
+		}
+	}
+
+	.show {
+		animation-name: hide-header;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes show-header {	
+		0% {
+			margin-top: -382px;
+		}
+		100% {
+			margin-top: 0;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

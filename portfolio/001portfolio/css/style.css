@@ -313,42 +313,35 @@ button.slideTwoButtonTwo:active {
 
 /* Animation */
 
-.show {
+.hide {
 	animation-name: show-header;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
 
-@keyframes show-header {
+@keyframes hide-header {
 	0% {
-		margin-top: -173px;
+		margin-top: 0;
 	}
 	100% {
-		margin-top: 0;
+		margin-top: -173px;
 	}
 }
 
-.hide {
+.show {
 	animation-name: hide-header;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
 
-@keyframes hide-header {	
+@keyframes show-header {	
 	0% {
-		margin-top: 0;
-	}
-	100% {
 		margin-top: -173px;
 	}
+	100% {
+		margin-top: 0;
+	}
 }
-
-
-
-
-
-
-
 
 
 
