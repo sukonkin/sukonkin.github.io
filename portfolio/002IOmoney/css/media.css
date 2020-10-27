@@ -35,6 +35,10 @@
 		padding: 50px 0 0 0;
 	}
 	
+	.select-card-two__container {
+		padding: 80px 0 0 0;
+	}
+	
 	.card-three__text {
 		padding-bottom: 60px;
 	}
@@ -46,6 +50,8 @@
 }
 
 @media screen and (max-width: 680px) {
+	.select-card-one__container, .card-one__container, 
+
 	.logo-center {
 		display: flex;
 		justify-content: center;
