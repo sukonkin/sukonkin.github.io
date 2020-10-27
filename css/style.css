@@ -111,8 +111,18 @@ h2 {
 	color: #000000;
 }
 
+.portfolio__container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cart_margin {
+	margin-left: 20px;
+}
+
 .cart {
 	width: 301px;
+	margin-bottom: 25px;
 }
 
 .cart > img {
@@ -120,6 +130,7 @@ h2 {
 }
 
 .cart > img +p {
+	padding-top: 5px;
 	padding-bottom: 15px;
 }
 
