@@ -110,16 +110,11 @@
 	}
 }
 
-@/* media screen and (max-width: 370px) {
-	.card-one__title, .card-two__title, .card-three__title, .select-card-two__title {
-		width: 250px;
-	}
-	
-	.select-card-one__text, .card-one__text, .card-two__text, .card-three__text, .select-card-two__text {
-		width: 250px;
+@ media screen and (max-width: 370px) {
+	.select-card-two__button {
+		padding: 17px 5px;
 	}
 }
- */
 
 
 
