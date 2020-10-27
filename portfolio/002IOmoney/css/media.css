@@ -51,7 +51,6 @@
 }
 
 @media screen and (max-width: 680px) {
-	.select-card-one__container, .card-one__container, 
 
 	.logo-center {
 		display: flex;
@@ -111,7 +110,7 @@
 	}
 }
 
-@media screen and (max-width: 370px) {
+@/* media screen and (max-width: 370px) {
 	.card-one__title, .card-two__title, .card-three__title, .select-card-two__title {
 		width: 250px;
 	}
@@ -120,7 +119,7 @@
 		width: 250px;
 	}
 }
-
+ */
 
 
 
