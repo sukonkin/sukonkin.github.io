@@ -100,6 +100,10 @@
 		padding: 20px 5px 0 5px;
 	}
 	
+	.select-card-two__button {
+		padding: 17px 20px;
+	}
+	
 	.footer {
 		display: flex;
 		justify-content: center;
