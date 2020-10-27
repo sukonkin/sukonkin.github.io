@@ -1,7 +1,11 @@
 @media screen and (min-width: 1450px) {
 	.select-card-one, .card-one, .card-two, .card-three, .select-card-two {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
+		-webkit-box-pack: center;
+		   -ms-flex-pack: center;
+		 justify-content: center;
 	}
 	
 	.card-three_img, .card-two_img, .card-one__img {
@@ -26,10 +30,18 @@
 
 @media screen and (max-width: 1105px) {
 	.select-card-one, .card-one, .card-two, .card-three, .select-card-two {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
-		flex-wrap: wrap;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		   -ms-flex-direction: column;
+		       flex-direction: column;
+		-webkit-box-align: center;
+		   -ms-flex-align: center;
+		      align-items: center;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 	}
 	
 	.select-card-one__container, .card-one__container, .card-three__container {
@@ -53,8 +65,12 @@
 @media screen and (max-width: 680px) {
 
 	.logo-center {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
+		-webkit-box-pack: center;
+		   -ms-flex-pack: center;
+		 justify-content: center;
 	}
 
 	.select-card-one__title {
@@ -105,17 +121,20 @@
 	}
 	
 	.footer {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
+		-webkit-box-pack: center;
+		   -ms-flex-pack: center;
+		 justify-content: center;
 	}
 }
 
-@ media screen and (max-width: 370px) {
+@media screen and (max-width: 370px) {
 	.select-card-two__button {
 		padding: 17px 5px;
 	}
 }
-
 
 
 
