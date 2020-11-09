@@ -1,6 +1,6 @@
 *,
-*::before,
-*::after {
+*:before,
+*:after {
 	margin: 0;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -16,6 +16,7 @@ body {
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 }
+
 
 
 
@@ -35,37 +36,6 @@ header {
 	color: #000000;
 }
 
-.focus-in-contract {
-	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes focus-in-contract {
-  0% {
-    letter-spacing: 1em;
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
-@keyframes focus-in-contract {
-  0% {
-    letter-spacing: 1em;
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
 
 
 
@@ -88,7 +58,13 @@ h1 {
 	background-color: #918591;
 }
 
-h1 + p {
+h2 {
+	padding-bottom: 40px;
+	font-size: 30px;
+	color: #000000;
+}
+
+h1 +p {
 	padding-top: 15px;
 }
 
@@ -105,36 +81,91 @@ a[title="Write me"] {
 	padding-top: 120px;
 }
 
-h2 {
-	padding-bottom: 40px;
-	font-size: 30px;
-	color: #000000;
-}
-
 .portfolio__container {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.cart_margin {
-	margin-left: 20px;
+	justify-content: space-between;
 }
 
 .cart {
-	width: 301px;
-	margin-bottom: 25px;
+	width: 260px;
+	margin-bottom: 35px;
 }
 
-.cart > img {
+.cart__image {
+	position: relative;
+	margin-bottom: 20px;
+	width: 260px;
+	height: 224px;
+	border: solid 1px #e1e1e1;
+}
+
+.cart_bg-1, .cart_bg-2, .cart_bg-3 {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.cart_bg-1 {
+	background-image: url(../images/portfolio/portfolio-3.jpg);
+}
+
+.cart_bg-2 {
+	background-image: url(../images/portfolio/portfolio-2.jpg);
+}
+
+.cart_bg-3 {
+	background-image: url(../images/portfolio/portfolio-1.jpg);
+}
+
+.cart_after-js:after {
+	content: "JavaScript";
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	background-color: #94be93;
+	top: calc(50% - 20px);
+	color: #ffffff;
+	font-family: Calibri, sans-serif;
+	font-size: 24px;
+	text-align: center;
+	line-height: 1.6;
+}
+
+.cart_after-html-css:after {
+	content: "HTML+CSS";
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	background-color: #be94b5;
+	top: calc(50% - 20px);
+	color: #ffffff;
+	font-family: Calibri, sans-serif;
+	font-size: 24px;
+	text-align: center;
+	line-height: 1.6;
+}
+
+.cart_after-html-css-js:after {
+	content: "HTML+CSS+JavaScript";
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	background-color: #94bdbe;
+	top: calc(50% - 20px);
+	color: #ffffff;
+	font-family: Calibri, sans-serif;
+	font-size: 24px;
+	text-align: center;
+	line-height: 1.6;
+}
+
+.cart__description {
 	padding-bottom: 15px;
 }
 
-.cart > img +p {
-	padding-top: 5px;
-	padding-bottom: 15px;
-}
-
-.data-Time {
+.data {
+	height: 17px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -146,18 +177,19 @@ h2 {
 	justify-content: space-between;
 }
 
-.data-Time > a {
+.data__time {
+	padding-top: 2px;
+	font-size: 14px;
+	color: #8C8C8C;
+}
+
+.data__link {
 	font-size: 14px;
 	color: #3e3d3d;
 }
 
-.data-Time > a:hover {
+.data__link:hover {
 	text-decoration: none;
-}
-
-.data-Time > p {
-	font-size: 12px;
-	color: #8C8C8C;
 }
 
 
