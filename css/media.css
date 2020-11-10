@@ -11,6 +11,9 @@
 }
 
 @media screen and (max-width: 700px) {
+	.cart_after-js:after, .cart_after-html-css:after, .cart_after-html-css-js:after {
+		font-size: 20px;
+	}
 	
 	.portfolio__container {
 		flex-direction: column;
