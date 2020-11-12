@@ -105,14 +105,14 @@ a[title="Write me"] {
 	border: solid 1px #e1e1e1;
 }
 
-.cart_bg-1, .cart_bg-2, .cart_bg-3 {
+.cart_bg-1, .cart_bg-2, .cart_bg-3, .cart_bg-4 {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .cart_bg-1 {
-	background-image: url(../images/portfolio/portfolio-3.jpg);
+	background-image: url(../images/portfolio/portfolio-1.jpg);
 }
 
 .cart_bg-2 {
@@ -120,7 +120,12 @@ a[title="Write me"] {
 }
 
 .cart_bg-3 {
-	background-image: url(../images/portfolio/portfolio-1.jpg);
+	background-image: url(../images/portfolio/portfolio-3.jpg);
+}
+
+
+.cart_bg-4 {
+	background-image: url(../images/portfolio/portfolio-4.jpg);
 }
 
 .cart_after-js:after {
