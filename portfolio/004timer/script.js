@@ -17,8 +17,8 @@ function startMsecond() {
 		newMseconds = 0;
 		mseconds.innerHTML = newMseconds;
 	} if (newMseconds < 9) {
-		newMseconds++;
 		mseconds.innerHTML = '0' + newMseconds;
+		newMseconds++;
 	} else {
 		newMseconds++;
 		mseconds.innerHTML = newMseconds;
@@ -32,8 +32,8 @@ function startSecond() {
 		newSeconds = 0;
 		seconds.innerHTML = newSeconds;
 	} if (newSeconds < 9) {
-		newSeconds++;
 		seconds.innerHTML = '0' + newSeconds;
+		newSeconds++;
 	} else {
 		newSeconds++;
 		seconds.innerHTML = newSeconds;
@@ -47,8 +47,8 @@ function startMinutes() {
 		newMinutes = 0;
 		minutes.innerHTML = newMinutes;
 	} if (newMinutes < 9) {
-		newMinutes++;
 		minutes.innerHTML = '0' + newMinutes;
+		newMinutes++;
 	} else {
 		newMinutes++;
 		minutes.innerHTML = newMinutes;
@@ -62,8 +62,8 @@ function startHours() {
 		newHours = 0;
 		hours.innerHTML = newHours;
 	} if (newHours < 9) {
-		newHours++;
 		hours.innerHTML = '0' + newHours;
+		newHours++;
 	} else {
 		newHours++;
 		hours.innerHTML = newHours;

@@ -40,7 +40,7 @@
 
 @media screen and (max-width: 440px) {
 	
-	main > section > h1 {
+	#greeting {
 		padding-left: 7px;
 		padding-top: 2px;
 		line-height: 2.1;
