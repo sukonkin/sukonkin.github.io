@@ -27,13 +27,16 @@
 	width: 300px;
 	padding: 35px;
 	background-color: #D6D6D6;
-	transform: translateX(-300px);
+	-webkit-transform: translateX(-300px);
+	    -ms-transform: translateX(-300px);
+	        transform: translateX(-300px);
 }
 
 .nav_display {
 	top: 0;
 	left: 0;
-	box-shadow: 1px 0 15px #777777;
+	-webkit-box-shadow: 1px 0 15px #777777;
+	        box-shadow: 1px 0 15px #777777;
 }
 
 .nav__title {
@@ -48,7 +51,7 @@
 	padding-bottom: 10px;
 	text-decoration: none;
 	font-size: 18px;
-	font-family: Colibri, sans-serif;
+	font-family: Arial, sans-serif;
 	color: #000000;
 }
 
