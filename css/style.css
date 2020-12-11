@@ -77,8 +77,51 @@ a[title="Write me"] {
 
 /* Portfolio */
 
+
+
 .portfolio {
 	padding-top: 120px;
+}
+
+.portfolio__title {
+	width: 200px;
+}
+
+.skills__item, 
+.portfolio__title, 
+.skills {
+	display: inline-block;
+}
+
+.skills__item {
+	margin-right: 8px;
+}
+
+.skills__title {
+	border-bottom: 2px dotted;
+	cursor: pointer;
+}
+
+.skills__title_js {
+	color: #94be93;
+}
+
+.skills__title_tm {
+	color: #be94b5;
+}
+
+.skills__title_all {
+	color: #000000;
+}
+
+.skills__title_active {
+	cursor: default;
+	border-bottom: none;
+}
+
+.skills__title_js:hover,
+.skills__title_tm:hover {
+	border-bottom: none;
 }
 
 .portfolio__container {
@@ -105,11 +148,16 @@ a[title="Write me"] {
 	border: solid 1px #e1e1e1;
 }
 
-.cart_bg-1, .cart_bg-2, .cart_bg-3, .cart_bg-4 {
+.cart_bg-0, .cart_bg-1, .cart_bg-2, .cart_bg-3, .cart_bg-4, .cart_bg-5 {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.cart_bg-0 {
+	background-image: url(../images/portfolio/portfolio-0.gif);
+}
+
 
 .cart_bg-1 {
 	background-image: url(../images/portfolio/portfolio-1.jpg);
@@ -126,6 +174,10 @@ a[title="Write me"] {
 
 .cart_bg-4 {
 	background-image: url(../images/portfolio/portfolio-4.jpg);
+}
+
+.cart_bg-5 {
+	background-image: url(../images/portfolio/portfolio-5.jpg);
 }
 
 .cart_after-js:after {
@@ -162,6 +214,20 @@ a[title="Write me"] {
 	width: 100%;
 	height: 40px;
 	background-color: #94bdbe;
+	top: calc(50% - 20px);
+	color: #ffffff;
+	font-family: Calibri, sans-serif;
+	font-size: 24px;
+	text-align: center;
+	line-height: 1.6;
+}
+
+.cart_after-nothing:after {
+	content: "Скоро будет еще";
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	background-color: #a9a9a9;
 	top: calc(50% - 20px);
 	color: #ffffff;
 	font-family: Calibri, sans-serif;

@@ -26,6 +26,7 @@
 		
 		<script defer src="js/html5shiv.js"></script>
 		<script defer src="js/script.js"></script>
+		<script defer src="js/portfolio.js"></script>
 	</head>
 
 	<body>
@@ -43,11 +44,26 @@
 			
 			<section class="portfolio">
 			
-				<h2>Портфолио</h2>
+				<h2 class="portfolio__title">Портфолио</h2>
 				
+				<ul class="skills">
+					<li class="skills__item"><span data-skills="all" class="skills__title skills__title_all skills__title_active">Все</span></li>
+					<li class="skills__item"><span data-skills="JavaScript" class="skills__title skills__title_js">JavaScript</span></li>
+					<li class="skills__item"><span data-skills="Templates" class="skills__title skills__title_tm">Шаблоны</span></li>
+				</ul>
+
 				<div class="portfolio__container">
 				
-					<div class="cart">
+					<div data-cart="js" class="cart">
+						<div class="cart__image cart_bg-5 cart_after-js"></div>
+						<p class="cart__description">Боковое меню</p>
+						<div class="data">
+							<a class="data__link" href="portfolio/005menu/index.html" title="Перейти">Смотреть</a>
+							<p class="data__time">09.12.2020</p>
+						</div>
+					</div>
+
+					<div data-cart="js" class="cart">
 						<div class="cart__image cart_bg-4 cart_after-js"></div>
 						<p class="cart__description">Таймер на 24 часа</p>
 						<div class="data">
@@ -56,7 +72,7 @@
 						</div>
 					</div>
 				
-					<div class="cart">
+					<div data-cart="js" class="cart">
 						<div class="cart__image cart_bg-3 cart_after-js"></div>
 						<p class="cart__description">Слайдер котов</p>
 						<div class="data">
@@ -65,7 +81,7 @@
 						</div>
 					</div>
 				
-					<div class="cart">
+					<div data-cart="template" class="cart">
 						<div class="cart__image cart_bg-2 cart_after-html-css"></div>
 						<p class="cart__description">ЮMoney шаблон</p>
 						<div class="data">
@@ -74,12 +90,21 @@
 						</div>
 					</div>
 				
-					<div class="cart">
+					<div data-cart="template" class="cart">
 						<div class="cart__image cart_bg-1 cart_after-html-css-js"></div>
 						<p class="cart__description">Бутстрап без бутстрапа</p>
 						<div class="data">
 							<a class="data__link" href="portfolio/001portfolio/index.html" title="Перейти">Смотреть</a>
 							<p class="data__time">03.09.2020</p>
+						</div>
+					</div>
+
+					<div data-cart="nothing" class="cart">
+						<div class="cart__image cart_bg-0 cart_after-nothing"></div>
+						<p class="cart__description">Заголовок заголовка</p>
+						<div class="data">
+							<p class="data__time">Ссылки нет</p>
+							<p class="data__time">ДД.ММ.ГГГГ</p>
 						</div>
 					</div>
 					

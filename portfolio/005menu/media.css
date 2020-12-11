@@ -1,0 +1,46 @@
+@media screen and (max-width >= 440px) {
+	.nav {
+		width: 200px;
+		padding: 25px;
+		transform: translateX(-200px);
+	}
+
+	@keyframes cross-anim-right {
+		from {
+			margin-left: 45px;
+		}
+		to {
+			margin-left: 245px;
+		}
+	}
+
+	@keyframes cross-anim-left {
+		from {
+			margin-left: 245px;
+		}
+		to {
+			margin-left: 45px;
+		}
+	}
+
+	@keyframes anim-right {
+		from {
+			transform: translateX(-200px);
+			opacity: 0;
+		}
+		to {
+			transform: translateX(0);
+			opacity: 1;
+		}
+	}
+
+	@keyframes anim-left {
+		from {
+			transform: translateX(0);
+			opacity: 1;
+		}
+		to {
+			transform: translateX(-200px);
+			opacity: 0;	
+		}
+}

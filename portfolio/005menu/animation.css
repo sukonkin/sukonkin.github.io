@@ -1,0 +1,113 @@
+.cross_anim-right {
+	animation-name: cross-anim-right;
+	animation-duration: 0.5s;
+	animation-direction: normal;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+@keyframes cross-anim-right {
+	from {
+		margin-left: 45px;
+	}
+	to {
+		margin-left: 345px;
+	}
+}
+
+.cross_anim-left {
+	animation-name: cross-anim-left;
+	animation-duration: 0.5s;
+	animation-direction: normal;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+@keyframes cross-anim-left {
+	from {
+		margin-left: 345px;
+	}
+	to {
+		margin-left: 45px;
+	}
+}
+
+.cross__link_animation-one {
+	display: inline-block;
+	animation-name: cross-animation-one;
+	animation-duration: 0.5s;
+	animation-direction: normal;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+@keyframes cross-animation-one {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotateZ(45deg);
+	}
+}
+
+.cross__link_animation-two {
+	display: inline-block;
+	animation-name: cross-animation-two;
+	animation-duration: 0.5s;
+	animation-direction: normal;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+@keyframes cross-animation-two {
+	from {
+		transform: rotateZ(45deg);
+	}
+	to {
+		transform: rotateZ(0);
+	}
+}
+
+.nav_anim-right {
+	animation-name: anim-right;
+	animation-duration: 0.5s;
+	animation-direction: normal;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+@keyframes anim-right {
+	from {
+		transform: translateX(-300px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.nav_anim-left {
+	animation-name: anim-left;
+	animation-duration: 0.5s;
+	animation-direction: normal;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+@keyframes anim-left {
+	from {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateX(-300px);
+		opacity: 0;	
+	}
+}

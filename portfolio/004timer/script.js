@@ -43,12 +43,12 @@ function startSecond() {
 const minutesTimer = setInterval(startMinutes, 60000);
 	
 function startMinutes() {
-	if (newMinutes == 60) {
+	if (newMinutes == 59) {
 		newMinutes = 0;
 		minutes.innerHTML = newMinutes;
 	} if (newMinutes < 9) {
-		minutes.innerHTML = '0' + newMinutes;
 		newMinutes++;
+		minutes.innerHTML = '0' + newMinutes;
 	} else {
 		newMinutes++;
 		minutes.innerHTML = newMinutes;
@@ -58,12 +58,12 @@ function startMinutes() {
 const hoursTimer = setInterval(startHours, 36000000);
 	
 function startHours() {
-	if (newHours == 24) {
+	if (newHours == 23) {
 		newHours = 0;
 		hours.innerHTML = newHours;
 	} if (newHours < 9) {
-		hours.innerHTML = '0' + newHours;
 		newHours++;
+		hours.innerHTML = '0' + newHours;
 	} else {
 		newHours++;
 		hours.innerHTML = newHours;
