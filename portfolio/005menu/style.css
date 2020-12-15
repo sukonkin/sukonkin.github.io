@@ -6,8 +6,10 @@
 }
 
 .cross {
+	position: absolute;
 	margin-top: 35px;
 	margin-left: 45px;
+	z-index: 3;
 }
 
 .cross__link {
@@ -30,6 +32,7 @@
 	-webkit-transform: translateX(-300px);
 	    -ms-transform: translateX(-300px);
 	        transform: translateX(-300px);
+	z-index: 2;
 }
 
 .nav_display {
@@ -58,3 +61,35 @@
 .nav__link:hover {
 	text-decoration: underline;
 }
+
+.base {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	opacity: 0.2;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	font-family: Calibri, Arial, sans-serif;
+	color: #454545;
+}
+
+.block {
+	padding: 80px 20px;
+}
+
+.title {
+	padding-bottom: 25px;
+	font-size: 42px;
+}
+
+.description {
+	padding-bottom: 10px;
+	font-size: 21px;
+}
+

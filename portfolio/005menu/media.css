@@ -1,4 +1,4 @@
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 375px) {
 	.nav {
 		width: 250px;
 		padding: 25px;
@@ -92,6 +92,57 @@
 			-webkit-transform: translateX(-250px);
 			        transform: translateX(-250px);
 			opacity: 0;	
+		}
+	}
+
+	.title {
+		padding-bottom: 25px;
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.nav {
+		width: 200px;
+		padding: 25px;
+		-webkit-transform: translateX(-200px);
+		    -ms-transform: translateX(-200px);
+		        transform: translateX(-200px);
+	}
+
+	@-webkit-keyframes cross-anim-right {
+		from {
+			margin-left: 45px;
+		}
+		to {
+			margin-left: 230px;
+		}
+	}
+
+	@keyframes cross-anim-right {
+		from {
+			margin-left: 45px;
+		}
+		to {
+			margin-left: 230px;
+		}
+	}
+
+	@-webkit-keyframes cross-anim-left {
+		from {
+			margin-left: 230px;
+		}
+		to {
+			margin-left: 45px;
+		}
+	}
+
+	@keyframes cross-anim-left {
+		from {
+			margin-left: 230px;
+		}
+		to {
+			margin-left: 45px;
 		}
 	}
 }

@@ -2,7 +2,21 @@
 
 const menu = document.querySelector('.nav'),
 		cross = document.querySelector('.cross'),
-		crossLink = cross.querySelector('.cross__link');
+		crossLink = cross.querySelector('.cross__link'),
+		base = document.querySelector('.base');
+
+base.style.display = 'none';
+
+function closeMenu() {
+	menu.classList.remove('nav_anim-right');
+	cross.classList.remove('cross_anim-right');
+	cross.classList.add('cross_anim-left');
+	menu.classList.add('nav_anim-left');
+	crossLink.classList.remove('cross__link_animation-one');
+	crossLink.classList.add('cross__link_animation-two');
+	crossLink.setAttribute("title", "Открыть меню");
+	base.style.display = 'none';
+}
 
 crossLink.addEventListener('click', (event) => {
 	event.preventDefault();
@@ -17,17 +31,23 @@ crossLink.addEventListener('click', (event) => {
 			crossLink.classList.add('cross__link_animation-one');
 			crossLink.setAttribute("title", "Закрыть меню");
 			menu.classList.add('nav_display');
+			base.style.display = '';
+
 		} else {
-			menu.classList.remove('nav_anim-right');
-			cross.classList.remove('cross_anim-right');
-			cross.classList.add('cross_anim-left');
-			menu.classList.add('nav_anim-left');
-			crossLink.classList.remove('cross__link_animation-one');
-			crossLink.classList.add('cross__link_animation-two');
-			crossLink.setAttribute("title", "Открыть меню");
+			closeMenu();
 		}
 
 	} 
 });
 
-	
+base.addEventListener('click', (event) => {
+	if (event.target && cross.classList.contains('cross_anim-right')) {
+		closeMenu();
+	} 
+});
+
+document.addEventListener('keydown', (event) => {
+	if (event.code === 'Escape' && cross.classList.contains('cross_anim-right')) {
+		closeMenu();
+	}
+});
