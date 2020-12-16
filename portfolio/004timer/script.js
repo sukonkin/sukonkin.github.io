@@ -9,7 +9,7 @@ let newHours = 0,
 	newMinutes = 0,
 	newSeconds = 0,
 	newMseconds = 0;
-	
+
 const msecondsTimer = setInterval(startMsecond, 10);
 	
 function startMsecond() {
@@ -17,8 +17,8 @@ function startMsecond() {
 		newMseconds = 0;
 		mseconds.innerHTML = newMseconds;
 	} if (newMseconds < 9) {
-		mseconds.innerHTML = '0' + newMseconds;
 		newMseconds++;
+		mseconds.innerHTML = '0' + newMseconds;
 	} else {
 		newMseconds++;
 		mseconds.innerHTML = newMseconds;
@@ -28,12 +28,12 @@ function startMsecond() {
 const secondsTimer = setInterval(startSecond, 1000);
 	
 function startSecond() {
-	if (newSeconds == 59) {
+	if (newSeconds === 59) {
 		newSeconds = 0;
 		seconds.innerHTML = newSeconds;
 	} if (newSeconds < 9) {
-		seconds.innerHTML = '0' + newSeconds;
 		newSeconds++;
+		seconds.innerHTML = '0' + newSeconds;
 	} else {
 		newSeconds++;
 		seconds.innerHTML = newSeconds;
