@@ -212,7 +212,7 @@
 	}
 
 	.article__data, .article__link {
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 	}
 
 	.article__data_padding, .article__icon {
@@ -275,6 +275,10 @@
 		display: block;
 		overflow: hidden;
 		line-clamp: 3;
+	}
+
+	.article__icon {
+		display: none;
 	}
 
 }
