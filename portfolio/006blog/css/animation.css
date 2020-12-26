@@ -1,0 +1,154 @@
+/* Burger */
+
+.navigation_animation-in {
+	-webkit-animation-name: navigation-in;
+	        animation-name: navigation-in;
+	-webkit-animation-duration: 0.5s;
+	        animation-duration: 0.5s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+
+.navigation_animation-out {
+	-webkit-animation-name: navigation-out;
+	        animation-name: navigation-out;
+	-webkit-animation-duration: 0.5s;
+	        animation-duration: 0.5s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes navigation-in {
+	from {
+		top: -70px;
+	}
+	to {
+		top: 0;
+	}
+}
+@keyframes navigation-in {
+	from {
+		top: -70px;
+	}
+	to {
+		top: 0;
+	}
+}
+
+@-webkit-keyframes navigation-out {
+	from {
+		top: 0;
+	}
+	to {
+		top: -70px;
+	}
+}
+
+@keyframes navigation-out {
+	from {
+		top: 0;
+	}
+	to {
+		top: -70px;
+	}
+}
+
+
+/* Menu (max-width: 768px) */
+
+/*.menu_animation-in {
+	-webkit-animation-name: menu-in;
+	        animation-name: menu-in;
+	-webkit-animation-duration: 0.5s;
+	        animation-duration: 0.5s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes menu-in {
+	from {
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
+		opacity: 0;
+	}
+	to {
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
+		opacity: 1;
+	}
+}
+
+@keyframes menu-in {
+	from {
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
+		opacity: 0;
+	}
+	to {
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
+		opacity: 1;
+	}
+}*/
+
+.menu_animation-in {
+	-webkit-animation-name: menu-in;
+	        animation-name: menu-in;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes menu-in {
+	from {
+		height: 1px;
+		opacity: 0;
+	}
+	to {
+		height: 321px;
+		opacity: 1;
+	}
+}
+
+@keyframes menu-in {
+	from {
+		height: 1px;
+		opacity: 0;
+	}
+	to {
+		height: 321px;
+		opacity: 1;
+	}
+}
+
+.menu_animation-out {
+	-webkit-animation-name: menu-out;
+	        animation-name: menu-out;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes menu-out {
+	from {
+		height: 321px;
+		opacity: 1;
+	}
+	to {
+		height: 1px;
+		opacity: 0;
+	}
+}
+
+@keyframes menu-out {
+	from {
+		height: 321px;
+		opacity: 1;
+	}
+	to {
+		height: 1px;
+		opacity: 0;
+	}
+}

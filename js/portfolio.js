@@ -22,6 +22,17 @@ cart.forEach( (item) => {
 		}
 });
 
+
+// Убираем вспомогательный блок при загрузке страницы
+cart.forEach( (block) => {
+
+	if (!numData.test(summAll)) {
+		cartNothing.style.display = 'none';
+	}
+
+});
+
+
 // Пишем обработчик события
 portfolio.forEach( (element) => {
 	element.addEventListener('click', (event) => {
@@ -78,8 +89,8 @@ portfolio.forEach( (element) => {
 			portfolio.forEach( (element) => {
 				if (element.classList.contains('skills__title_active')) {
 					element.classList.remove('skills__title_active');
-				} if (numData.test(summAll)) {
-						cartNothing.style.display = '';
+				} if (!numData.test(summAll)) {
+						cartNothing.style.display = 'none';
 				}
 			});
 			e.classList.add('skills__title_active');
