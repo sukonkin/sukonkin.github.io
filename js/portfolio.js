@@ -26,7 +26,7 @@ cart.forEach( (item) => {
 // Убираем вспомогательный блок при загрузке страницы
 cart.forEach( (block) => {
 
-	if (!numData.test(summAll)) {
+	if (numData.test(summAll)) {
 		cartNothing.style.display = 'none';
 	}
 
@@ -68,7 +68,7 @@ portfolio.forEach( (element) => {
 				} if (item.dataset.cart == 'template') {
 					item.style.display = '';
 
-				  // Пишем условие при кот. появится карточка "Скоро будет еще"
+				// Пишем условие при кот. появится карточка "Скоро будет еще"
 				} if (numData.test(summTM)) {
 						cartNothing.style.display = '';
 				}
@@ -89,7 +89,7 @@ portfolio.forEach( (element) => {
 			portfolio.forEach( (element) => {
 				if (element.classList.contains('skills__title_active')) {
 					element.classList.remove('skills__title_active');
-				} if (!numData.test(summAll)) {
+				} if (numData.test(summAll)) {
 						cartNothing.style.display = 'none';
 				}
 			});

@@ -195,6 +195,10 @@ a[title="Write me"] {
 	background-image: url(../images/portfolio/portfolio-6.jpg);
 }
 
+.cart_bg-7 {
+	background-image: url(../images/portfolio/portfolio-7.jpg);
+}
+
 .cart_after-js:after {
 	content: "JavaScript";
 	position: absolute;

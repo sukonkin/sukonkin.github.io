@@ -1,0 +1,40 @@
+.wrapper {
+	position: absolute;
+	left: calc(50% - 105px);
+	top: 50px;
+	border: 1px solid #3E3D3B;
+}
+
+.row div {
+	padding: 10px;
+	border: 1px solid #3E3D3B;
+	height: 50px;
+	width: 50px;
+	float: left;
+	font-family: Calibri, sans-serif;
+	font-size: 36px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.row {
+	clear: both;
+}
+
+.cross {
+	color: #636f3f;
+}
+
+.zero {
+	color: #D36043;
+}
+
+.winner {
+	width: 210px;
+	position: absolute;
+	top: 290px;
+	left: calc(50% - 105px);
+	font-family: Calibri, sans-serif;
+	font-size: 24px;
+	color: #3E3D3B;
+}
