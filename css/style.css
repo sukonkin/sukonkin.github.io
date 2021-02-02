@@ -153,13 +153,7 @@ a[title="Write me"] {
 	border: solid 1px #e1e1e1;
 }
 
-.cart_bg-0, 
-.cart_bg-1, 
-.cart_bg-2, 
-.cart_bg-3, 
-.cart_bg-4, 
-.cart_bg-5,
-.cart_bg-6 {
+.cart_position {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
