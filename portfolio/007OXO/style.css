@@ -15,6 +15,7 @@
 	font-size: 36px;
 	font-weight: 300;
 	text-align: center;
+	cursor: pointer;
 }
 
 .row {
@@ -30,7 +31,6 @@
 }
 
 .winner {
-	width: 220px;
 	position: absolute;
 	top: 290px;
 	left: calc(50% - 105px);

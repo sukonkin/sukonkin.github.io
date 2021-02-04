@@ -2,7 +2,8 @@
 
 const portfolio = document.querySelectorAll('.skills__title'),
 		cart = document.querySelectorAll('.cart'),
-		cartNothing = document.querySelector('[data-cart="nothing"]');
+		cartNothing = document.querySelector('[data-cart="nothing"]'),
+		loader = document.querySelector('.loader');
 
 // NumData - это числа для которых нужна карточка "Скоро будет еще"
 const numData = /2|5|8|11|14|17|20|23|26|29/;
@@ -22,6 +23,48 @@ cart.forEach( (item) => {
 		}
 });
 
+loadingCart(summAll);
+
+
+// Скрипт загрузки дополнительных карточек
+function loadingCart (summ) {
+
+	if (summ > 6) {
+		for(let i = 6; i < (summ - 1); i++) {
+			cart[i].style.display = 'none';
+		}
+	}
+
+	if (summ <=6) {
+		loader.innerHTML = '';
+	} else {
+
+		loader.innerHTML = '<div class="loader">Загрузить еще</div>';
+
+		loader.addEventListener('click', () => {
+			let index = 5;
+			function loadCart (count) {
+				if (cart[index + count] && cart[index + count] !== cartNothing) {
+					cart[index + count].style.display = '';
+				} else {
+					return;
+				}
+			}
+			loadCart(1);
+			loadCart(2);
+			loadCart(3);
+			index += 3;
+			if (cart[cart.length - 2].style.display === '' && loader.innerHTML === '<div class="loader">Загрузить еще</div>') {
+				loader.innerHTML = '';
+			}
+		});
+
+	}
+}
+
+
+
+
 
 // Убираем вспомогательный блок при загрузке страницы
 cart.forEach( (block) => {
@@ -31,6 +74,9 @@ cart.forEach( (block) => {
 	}
 
 });
+
+
+
 
 
 // Пишем обработчик события
@@ -46,8 +92,10 @@ portfolio.forEach( (element) => {
 					item.style.display = 'none';
 				} if (item.dataset.cart == 'js') {
 					item.style.display = '';
+					
+					loadingCart(summJS);
 
-					// Пишем условие при кот. появится карточка "Скоро будет еще"
+				// Пишем условие при кот. появится карточка "Скоро будет еще"
 				} if (numData.test(summJS)) {
 						cartNothing.style.display = '';
 				}
@@ -67,6 +115,8 @@ portfolio.forEach( (element) => {
 					item.style.display = 'none';
 				} if (item.dataset.cart == 'template') {
 					item.style.display = '';
+
+					loadingCart(summTM);
 
 				// Пишем условие при кот. появится карточка "Скоро будет еще"
 				} if (numData.test(summTM)) {
@@ -94,6 +144,10 @@ portfolio.forEach( (element) => {
 				}
 			});
 			e.classList.add('skills__title_active');
+
+			// Скрытие личшнего
+			loadingCart(summAll);
+
 		}
 
 	});

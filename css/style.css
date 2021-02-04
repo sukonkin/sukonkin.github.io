@@ -42,7 +42,7 @@ header {
 /* Main */
 
 main {
-	padding: 60px 58px 60px 60px;
+	padding: 60px 58px 40px 60px;
 	color: #3e3d3d;
 	background-color: white;
 }
@@ -226,7 +226,8 @@ a[title="Write me"] {
 	position: absolute;
 	width: 100%;
 	height: 40px;
-	background-color: #94bdbe;
+	/*background-color: #94bdbe;*/
+	background-color: #be94b5;
 	top: calc(50% - 20px);
 	color: #ffffff;
 	font-family: Calibri, sans-serif;
@@ -281,6 +282,17 @@ a[title="Write me"] {
 	text-decoration: none;
 }
 
+.loader {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	/*color: #be94b5;*/
+	color: #3e3d3d;
+	cursor: pointer;
+	-webkit-text-decoration-line: underline;
+	        text-decoration-line: underline;
+}
 
-
-
+.loader:hover {
+	text-decoration: none;
+}
